@@ -1,7 +1,7 @@
 import { ArrayMaxSize, ArrayMinSize, IsArray, IsDateString, IsNotEmpty } from "class-validator";
 import { Jogador } from "src/jogadores/interfaces/jogador.interface";
 
-export class CriarDesafio {
+export class CriarDesafioDto {
     @IsNotEmpty()
     @IsDateString()
     dataHoraDesafio: Date;
